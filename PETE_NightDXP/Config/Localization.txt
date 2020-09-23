@@ -1,0 +1,4 @@
+﻿Key,Source,Context,English
+buffBonusXpNightDesc,buffs,Buff,"This Buff doubles your xp gain while killing zombies during the night."
+buffBonusXpNightName,buffs,Buff,"Night Double XP"
+buffBonusXpNightTooltip,buffs,Buff,"This Buff doubles your xp gain while killing zombies during the night."

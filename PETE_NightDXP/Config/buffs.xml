@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+        <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBonusXpNight">
+			<requirement name="IsNight"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBonusXpNight">
+			<requirement name="IsDay"/>
+		</triggered_effect>
+	</append>	
+
+	<append xpath="/buffs">
+		<buff name="buffBonusXpNight" name_key="buffBonusXpNightName" description_key="buffBonusXpNightDesc" tooltip_key="buffBonusXpNightTooltip" icon="ui_game_symbol_candy_skull_crushers" icon_color="0,100,150">
+			<stack_type value="ignore"/><duration value="0"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="1" tags="Kill"/>
+			</effect_group>
+		</buff>
+    </append>	
+</configs>
